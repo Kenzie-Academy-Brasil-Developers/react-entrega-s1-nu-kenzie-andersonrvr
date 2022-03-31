@@ -1,0 +1,28 @@
+.totalValue {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.totalValue > p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: #868e96;
+}
+.totalValue > span {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #fd377e;
+  text-align: end;
+  /* margin-left: 120px; */
+  float: right;
+}

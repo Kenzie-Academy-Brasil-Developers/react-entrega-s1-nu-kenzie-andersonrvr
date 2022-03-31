@@ -1,0 +1,17 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  width: 50%;
+  margin: 0px auto;
+  flex-direction: row;
+  border: 1px solid black;
+  padding: 20px;
+}
+.valueButton > span {
+  padding: 60px;
+}

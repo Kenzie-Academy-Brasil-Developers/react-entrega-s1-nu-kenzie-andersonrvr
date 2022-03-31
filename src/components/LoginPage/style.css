@@ -1,0 +1,66 @@
+.loginBody {
+  background-color: #212529;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  color: #fd377e;
+}
+h1 > span {
+  color: #fff;
+}
+.loginPrincipal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.infosNu {
+  width: 80%;
+  text-align: center;
+  color: white;
+}
+.infosNu > h2 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 48px;
+  color: #ffffff;
+}
+.infosNu > button {
+  background: #fd377e;
+  border: 2px solid #fd377e;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px 40px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.infosNu > p {
+  margin: 30px 0;
+}
+img {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  img {
+    display: block;
+  }
+  .infosNu {
+    width: 30%;
+    text-align: start;
+  }
+  .infosNu > button {
+    width: 50%;
+  }
+  .infosNu > h2 {
+    width: 70%;
+  }
+}
