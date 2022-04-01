@@ -1,0 +1,78 @@
+.titleList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.titleList > span {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+}
+.filters {
+  display: flex;
+}
+.btnAll {
+  background: #fd377e;
+  border: 1.4px solid #fd377e;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  margin: 2px;
+  padding: 8px;
+}
+.btnFilter {
+  background: #e9ecef;
+  border: 1.4px solid #e9ecef;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 2px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #868e96;
+  padding: 8px;
+}
+h3 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 34px;
+  color: #868e96;
+  text-align: center;
+}
+.emptyUL > li {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.emptyUL > li > div {
+  background: #e9ecef;
+  width: 60%;
+  height: 10px;
+}
+.emptyUL > li > section {
+  background: #e9ecef;
+  width: 10%;
+  height: 10px;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .titleList {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

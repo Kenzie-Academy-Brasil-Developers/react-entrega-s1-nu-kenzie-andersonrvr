@@ -20,6 +20,7 @@ h1 > span {
   width: 80%;
   text-align: center;
   color: white;
+  animation: fade 1s forwards;
 }
 .infosNu > h2 {
   font-family: "Nunito";
@@ -47,6 +48,14 @@ h1 > span {
 }
 img {
   display: none;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (min-width: 768px) {

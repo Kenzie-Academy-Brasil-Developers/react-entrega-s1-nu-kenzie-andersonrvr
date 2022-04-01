@@ -5,7 +5,10 @@ const TotalMoney = ({ listTransactions }) => {
     <div className="totalValue">
       Valor total :{" "}
       <span>
-        {listTransactions.reduce((acc, value) => acc + Number(value.value), 0)}
+        R$
+        {listTransactions
+          .reduce((acc, value) => acc + Number(value.value), 0)
+          .toFixed(2)}
       </span>
       <p>Valor referente a todas transações</p>
     </div>

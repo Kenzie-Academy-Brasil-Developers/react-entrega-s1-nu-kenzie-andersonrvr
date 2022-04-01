@@ -13,6 +13,7 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const Login = () => setIsLoggedIn(true);
   const Logout = () => setIsLoggedIn(false);
+  const [listFiltered, setListFitered] = useState(listTransactions);
 
   return isLoggedIn ? (
     <div className="App">
@@ -29,6 +30,8 @@ function App() {
           <Form
             listTransactions={listTransactions}
             setListTransactions={setListTransactions}
+            listFiltered={listFiltered}
+            setListFitered={setListFitered}
           />
           <TotalMoney listTransactions={listTransactions} />
         </section>
@@ -36,6 +39,8 @@ function App() {
           <List
             listTransactions={listTransactions}
             setListTransactions={setListTransactions}
+            listFiltered={listFiltered}
+            setListFitered={setListFitered}
           />
         </section>
       </main>

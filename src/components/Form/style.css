@@ -5,6 +5,7 @@ header {
   align-items: center;
   padding: 12px;
   justify-content: space-around;
+  animation: fade 1s forwards;
 }
 header > h1 {
   margin: 0;
@@ -24,6 +25,7 @@ main {
   /* display: flex; */
   justify-content: center;
   margin-top: 50px;
+  animation: fade 1s forwards;
 }
 main > .sectionForm,
 main > .sectionList {
@@ -69,6 +71,9 @@ form > button {
   color: #ffffff;
   margin-top: 10px;
   padding: 12px;
+}
+button {
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {

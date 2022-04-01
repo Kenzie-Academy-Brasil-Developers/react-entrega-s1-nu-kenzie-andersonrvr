@@ -1,8 +1,18 @@
 import "./style.css";
 
-const Card = ({ transaction, key, setListTransactions, listTransactions }) => {
+const Card = ({
+  transaction,
+  key,
+  setListTransactions,
+  listTransactions,
+  setListFitered,
+}) => {
   const excludeCard = (card) => {
     setListTransactions(
+      listTransactions.filter((e) => e.description !== card.description)
+    );
+
+    setListFitered(
       listTransactions.filter((e) => e.description !== card.description)
     );
   };
@@ -14,19 +24,19 @@ const Card = ({ transaction, key, setListTransactions, listTransactions }) => {
         <p>Entrada</p>
       </div>
       <div className="valueButton">
-        <span>{transaction.value}</span>
-        <button onClick={() => excludeCard(transaction)}>X</button>
+        <span>R${transaction.value}</span>
+        <button onClick={() => excludeCard(transaction)}>x</button>
       </div>
     </li>
   ) : (
     <li className="saida">
       <div className="salaryEntry">
         <span>{transaction.description}</span>
-        <p>Entrada</p>
+        <p>Saída</p>
       </div>
       <div className="valueButton">
-        <span>{transaction.value}</span>
-        <button onClick={() => excludeCard(transaction)}>X</button>
+        <span>R${transaction.value}.00</span>
+        <button onClick={() => excludeCard(transaction)}>x</button>
       </div>
     </li>
   );

@@ -1,5 +1,11 @@
 import "./style.css";
-const Form = ({ listTransactions, setListTransactions }) => {
+import List from "../List";
+const Form = ({
+  listTransactions,
+  setListTransactions,
+  setListFitered,
+  listFitlered,
+}) => {
   const registerTransaction = (event) => {
     event.preventDefault();
     console.log(event.target);
@@ -10,10 +16,11 @@ const Form = ({ listTransactions, setListTransactions }) => {
         infos[name] = value;
       }
     }
-    if (infos.type === "Saída") {
+    if (infos.type === "saída") {
       infos.value = -infos.value;
     }
     setListTransactions([...listTransactions, infos]);
+    setListFitered([...listTransactions, infos]);
   };
   return (
     <div>
@@ -36,8 +43,8 @@ const Form = ({ listTransactions, setListTransactions }) => {
         />
         <label htmlFor="type">Tipo de valor</label>
         <select id="type" name="type">
-          <option>Entrada</option>
-          <option>Saída</option>
+          <option>entrada</option>
+          <option>saída</option>
         </select>
         <button>Inserir Valor</button>
       </form>

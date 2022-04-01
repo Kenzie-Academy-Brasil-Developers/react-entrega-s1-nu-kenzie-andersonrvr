@@ -1,17 +1,51 @@
 ul {
-  margin: 0;
   padding: 0;
 }
 li {
   display: flex;
   justify-content: space-between;
   text-align: start;
-  width: 50%;
   margin: 0px auto;
   flex-direction: row;
-  border: 1px solid black;
   padding: 20px;
+  margin-top: 10px;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+.entrada {
+  border-left: 5px #03b898 solid;
+}
+.saida {
+  border-left: 5px #e9ecef solid;
+}
+.salaryEntry > span {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #212529;
+}
+.salaryEntry > p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: #868e96;
 }
 .valueButton > span {
-  padding: 60px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: #212529;
+  margin-right: 10px;
+}
+.valueButton > button {
+  background: #e9ecef;
+  border-radius: 2.46154px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  border: none;
 }
