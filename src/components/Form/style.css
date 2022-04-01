@@ -77,13 +77,21 @@ button {
 }
 
 @media (min-width: 768px) {
+  header {
+    justify-content: space-between;
+    padding: 12px 180px;
+  }
   main {
     display: flex;
+    justify-content: space-around;
+    margin: 50px 100px;
   }
   main > .sectionForm {
     width: 25%;
+    margin: 0;
   }
   main > .sectionList {
     width: 50%;
+    margin: 0;
   }
 }
