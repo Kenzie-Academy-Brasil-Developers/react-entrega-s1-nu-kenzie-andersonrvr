@@ -8,13 +8,9 @@ const Card = ({
   setListFitered,
 }) => {
   const excludeCard = (card) => {
-    setListTransactions(
-      listTransactions.filter((e) => e.description !== card.description)
-    );
+    setListTransactions(listTransactions.filter((e) => e !== card));
 
-    setListFitered(
-      listTransactions.filter((e) => e.description !== card.description)
-    );
+    setListFitered(listTransactions.filter((e) => e !== card));
   };
 
   return transaction.type === "entrada" ? (
@@ -29,7 +25,7 @@ const Card = ({
       </div>
     </li>
   ) : (
-    <li className="saida">
+    <li className="saida" key={key}>
       <div className="salaryEntry">
         <span>{transaction.description}</span>
         <p>Saída</p>
