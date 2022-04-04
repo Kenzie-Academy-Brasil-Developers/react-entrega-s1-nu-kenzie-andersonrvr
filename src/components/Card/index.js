@@ -1,4 +1,5 @@
 import "./style.css";
+import { FaTrash } from "react-icons/fa";
 
 const Card = ({
   transaction,
@@ -21,7 +22,9 @@ const Card = ({
       </div>
       <div className="valueButton">
         <span>R${transaction.value}</span>
-        <button onClick={() => excludeCard(transaction)}>x</button>
+        <button onClick={() => excludeCard(transaction)}>
+          <FaTrash />
+        </button>
       </div>
     </li>
   ) : (
@@ -32,7 +35,9 @@ const Card = ({
       </div>
       <div className="valueButton">
         <span>R${transaction.value}.00</span>
-        <button onClick={() => excludeCard(transaction)}>x</button>
+        <button onClick={() => excludeCard(transaction)}>
+          <FaTrash />
+        </button>
       </div>
     </li>
   );

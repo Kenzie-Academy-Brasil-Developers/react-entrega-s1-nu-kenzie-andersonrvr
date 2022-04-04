@@ -7,7 +7,7 @@ li {
   text-align: start;
   margin: 0px auto;
   flex-direction: row;
-  padding: 20px;
+  padding: 8px 20px;
   margin-top: 10px;
   background: #f8f9fa;
   border-radius: 4px;
@@ -40,7 +40,7 @@ li {
   font-weight: 400;
   font-size: 12px;
   line-height: 22px;
-  color: #212529;
+  /* color: #212529; */
   margin-right: 10px;
 }
 .valueButton > button {
@@ -48,4 +48,10 @@ li {
   border-radius: 2.46154px;
   transform: matrix(-1, 0, 0, 1, 0, 0);
   border: none;
+  padding: 4px;
+  color: #868e96;
+}
+.valueButton > button:hover {
+  color: #fff;
+  background-color: #868e96;
 }

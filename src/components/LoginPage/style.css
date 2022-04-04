@@ -31,17 +31,22 @@ h1 > span {
   color: #ffffff;
 }
 .infosNu > button {
-  background: #fd377e;
-  border: 2px solid #fd377e;
+  background: #e34981;
+  border: 2px solid #e34981;
   box-sizing: border-box;
   border-radius: 8px;
-  color: #fff;
+  color: #f8f9fa;
   padding: 10px 40px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+}
+.infosNu > button:hover {
+  background: #fd377e;
+  border: 2px solid #fd377e;
+  color: #fff;
 }
 .infosNu > p {
   margin: 30px 0;

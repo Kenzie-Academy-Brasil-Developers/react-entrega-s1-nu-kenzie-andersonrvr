@@ -1,5 +1,4 @@
 import "./style.css";
-import List from "../List";
 const Form = ({
   listTransactions,
   setListTransactions,
@@ -8,7 +7,6 @@ const Form = ({
 }) => {
   const registerTransaction = (event) => {
     event.preventDefault();
-    console.log(event.target);
     let infos = {};
     for (let i = 0; i < event.target.length; i++) {
       if (event.target[i].name) {

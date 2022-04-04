@@ -21,6 +21,11 @@ header > h1 {
   color: #868e96;
   padding: 10px;
 }
+.logoutButton:hover {
+  background-color: #868e96;
+  border: 1.4px solid #868e96;
+  color: #ffffff;
+}
 main {
   /* display: flex; */
   justify-content: center;
@@ -58,9 +63,10 @@ form > select {
   border-radius: 8px;
   padding: 12px;
 }
+
 form > button {
-  background: #fd377e;
-  border: 2px solid #fd377e;
+  background: #e34981;
+  border: 2px solid #e34981;
   box-sizing: border-box;
   border-radius: 8px;
   font-family: "Inter";
@@ -68,11 +74,16 @@ form > button {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  color: #ffffff;
+  color: #f8f9fa;
   margin-top: 10px;
   padding: 12px;
 }
-button {
+form > button:hover {
+  background: #fd377e;
+  color: #ffffff;
+}
+button,
+select {
   cursor: pointer;
 }
 
@@ -87,7 +98,7 @@ button {
     margin: 50px 100px;
   }
   main > .sectionForm {
-    width: 25%;
+    width: 32%;
     margin: 0;
   }
   main > .sectionList {

@@ -15,9 +15,9 @@
 .filters {
   display: flex;
 }
-.btnAll {
-  background: #fd377e;
-  border: 1.4px solid #fd377e;
+.btnSelected {
+  background: #e34981;
+  border: 1.4px solid #e34981;
   box-sizing: border-box;
   border-radius: 8px;
   font-family: "Nunito";
@@ -26,9 +26,14 @@
   font-size: 14px;
   line-height: 19px;
   text-align: center;
-  color: #ffffff;
+  color: #f8f9fa;
   margin: 2px;
   padding: 8px;
+}
+.btnSelected:hover {
+  background: #fd377e;
+  border: 1.4px solid #fd377e;
+  color: #ffffff;
 }
 .btnFilter {
   background: #e9ecef;
@@ -44,6 +49,11 @@
   text-align: center;
   color: #868e96;
   padding: 8px;
+}
+.btnFilter:hover {
+  background: #868e96;
+  border: 1.4px solid #868e96;
+  color: #fff;
 }
 h3 {
   font-family: "Nunito";

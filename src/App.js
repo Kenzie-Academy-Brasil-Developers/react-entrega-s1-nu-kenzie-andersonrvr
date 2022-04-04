@@ -6,10 +6,7 @@ import TotalMoney from "./components/TotalMoney";
 import LoginPage from "./components/LoginPage";
 
 function App() {
-  const [listTransactions, setListTransactions] = useState([
-    { description: "Salário recebido", type: "entrada", value: 2500 },
-    { description: "Conta de luz", type: "saída", value: -150 },
-  ]);
+  const [listTransactions, setListTransactions] = useState([]);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const Login = () => setIsLoggedIn(true);
   const Logout = () => setIsLoggedIn(false);
